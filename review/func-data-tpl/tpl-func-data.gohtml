@@ -1,0 +1,10 @@
+<ul>
+    {{range .}}
+        <li>{{upperCase .Name}} {{.Age}}</li>
+    {{end}}
+</ul>
+<ul>
+    {{range .}}
+        <li>{{firstThreeChar .Name}} {{.Age}}</li>
+    {{end}}
+</ul>

@@ -1,0 +1,19 @@
+<ul>
+    {{ $civil := .Civils }}
+    {{ $nineNine := .NineNines }}
+    {{range $civil}}
+        <li>{{.Name}} {{.Age}}</li>
+    {{end}}
+    {{range $nineNine}}
+        <li>{{.Name}} {{.Age}} {{.LicenceToKill}}</li>
+    {{end}}
+</ul>
+<ul>
+    {{range .Civils}}
+        <li>{{.Name}} {{.Age}}</li>
+    {{end}}
+    {{range .NineNines}}
+        <li>{{.Name}} {{.Age}} {{.LicenceToKill}}</li>
+    {{end}}
+    {{.}}
+</ul>
