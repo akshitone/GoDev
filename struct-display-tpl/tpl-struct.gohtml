@@ -1,0 +1,29 @@
+{{.}}
+
+end of all users
+
+{{range .}}
+    {{.}}
+{{end}}
+end of all users with range
+
+{{range .}}
+    {{if .Name}}
+        {{.}}
+    {{end}}
+{{end}}
+end of all users with Name
+
+{{range .}}
+    {{if and .Name .Married}}
+        {{.}}
+    {{end}}
+{{end}}
+end of all users with Name and Married
+
+{{range .}}
+    {{if eq .Age 22}}
+        {{.}}
+    {{end}}
+{{end}}
+end of all users with greater than 20 age
